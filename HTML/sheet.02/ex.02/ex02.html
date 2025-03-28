@@ -21,11 +21,19 @@
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br><br>
 
+            <!--<label>: Las etiquetas <label> asocian el texto visible con los campos de entrada (como un nombre o género).
+            El atributo for está vinculado con el id del campo correspondiente, lo que mejora la accesibilidad.-->
+
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="apellido" required><br><br>
 
+            <!--<input type="text">: Define un campo de texto para ingresar datos.-->
+
+
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <!--<input type="text">: Define un campo de texto para ingresar datos.-->
 
             <label>Género:</label>
             <input type="radio" id="masculino" name="genero" value="Masculino" required>
@@ -35,22 +43,35 @@
             <input type="radio" id="otro" name="genero" value="Otro" required>
             <label for="otro">Otro</label><br><br>
 
+            <!--<input type="radio">: Crea botones de opción, de modo que el usuario solo pueda seleccionar una opción (Masculino, Femenino, Otro).
+            Usamos el atributo required para que se tenga que seleccionar una opción.7-->
+
 
             
         </fieldset>
 
         <!-- Información de Contacto -->
+        
         <fieldset>
             <legend>Información de Contacto</legend>
 
             <label for="email">Dirección de Correo Electrónico:</label>
             <input type="email" id="email" name="email" required><br><br>
 
+            <!--<input type="email">: Este campo valida que el texto ingresado sea una dirección de correo electrónico.-->
+            <!--<input type="tel">: Este campo valida que se ingrese un número de teléfono.-->
+
             <label for="telefono">Número de Teléfono:</label>
             <input type="tel" id="telefono" name="telefono" required><br><br>
 
+
             <label for="direccion">Dirección:</label><br>
             <textarea id="direccion" name="direccion" rows="4" cols="50" required></textarea><br><br>
+
+            <!--<textarea>: Crea un campo de texto de varias líneas para ingresar la dirección del usuario.-->
+            <!--rows="4": Define la cantidad de filas visibles en el área de texto. En este caso, el campo tendrá 4 filas.-->
+            <!--cols="50": Define la cantidad de columnas visibles en el área de texto. En este caso, el campo tendrá 50 columnas.-->
+
         </fieldset>
 
         <!-- Información de Cuenta -->
@@ -63,9 +84,14 @@
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&]).{8,20}$" 
             title="La contraseña debe tener al menos una letra minúscula, una mayúscula, un dígito, un carácter especial (@$!%*#?&) y entre 8 y 20 caracteres."><br><br>
-
+            
+            <!--<input type="password">: Crea un campo de contraseña donde los caracteres se ocultan.-->
+            <!--pattern="...": Asegura que la contraseña cumpla con ciertos requisitos 
+            (mayúsculas, minúsculas, números, caracteres especiales y longitud entre 8 y 20).-->
+        
             <label for="confirmar_password">Confirmación de Contraseña:</label>
             <input type="password" id="confirmar_password" name="confirmar_password" required><br><br>
+        
         </fieldset>
 
         <!-- Preferencias -->
@@ -80,10 +106,16 @@
                 <option value="Amarillo">Amarillo</option>
             </select><br><br>
 
+            <!--<select>: Este elemento crea un menú desplegable, donde el usuario puede elegir una opción de una lista de opciones.-->
+            <!--<option>: Define una opción dentro del menú desplegable.-->
+
             <label for="terminos_condiciones">
                 <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
                 Acepto los Términos y Condiciones
             </label><br><br>
+
+            <!--<input type="checkbox">: Crea una casilla de verificación para que el usuario acepte los términos y condiciones.-->
+            
         </fieldset>
 
         <!-- Botón de envío -->
