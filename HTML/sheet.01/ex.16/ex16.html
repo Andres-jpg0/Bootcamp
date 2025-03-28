@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="#" method="post">
+
+        <!--Casilla del nombre-->
+        
+        <label for="nombre--">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" maxlength="30" required>
+        <!--Ponemos nombre, delimitamos las palabras y que sea necesario para completar-->
+
+        <br>
+
+        <!--Casilla apellidos-->
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="30" required>
+        <!-- Idem de arriba-->
+
+        <br>
+
+        <!--Casilla Email-->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- Aqui solo acepta direcciones email-->
+
+        <br>
+        <br>
+        
+        
+        <!--Asunto campo desplegable-->
+        <label for="asunto">Asunto:</label>
+        
+        <select id="asunto" name="asunto" size="3" required>
+
+            <option value="presupuesto">Pedir presupuesto</option>
+            <option value="cita">Solicitar cita previa</option>
+            <option value="otros">Otros</option>
+        </select>
+        
+        <!--<select> crea una lista desplegable. El atributo size="3" asegura que se vean las tres opciones.
+        Cada opción se define con <option>, que tiene un value que indica el valor que
+        se enviará con el formulario cuando el usuario elija una opción.-->
+
+        <!--Como nos ha conocido-->
+
+        <label for="conocido">¿Cómo nos ha conocido?</label>
+        <br>
+        <input type="checkbox" id="amigo" name="conocido[]" value="amigo">
+        <label for="amigo">Un amigo</label>
+        <br>
+        <input type="checkbox" id="google" name="conocido[]" value="googleando">
+        <label for="google">Googleando</label>
+        <br>
+        <input type="checkbox" id="buzoneo" name="conocido[]" value="buzoneo">
+        <label for="buzoneo">Buzoneo</label>
+        <br>
+        <input type="checkbox" id="otros" name="conocido[]" value="otros">
+        <label for="otros">Otros</label>
+        <br>
+
+        <!--Usamos checkbox para permitir que el usuario pueda seleccionar varias opciones.-->
+        <!--Cada opción tiene su propio input con un id único y un value que será enviado al formulario si el usuario la selecciona.-->
+        <!--Los <label> sirven para mostrar el texto que describe cada opción.-->
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" maxlength="300" rows="4" required></textarea>
+        <br>
+
+        <!--El <textarea> crea un cuadro de texto grande para que el usuario ingrese un mensaje.-->
+        <!--maxlength="300" limita la cantidad de caracteres a 300.-->
+        <!--rows="4" define cuántas líneas se verán del mensaje, en este caso, 4 líneas.-->
+
+        <label for="rgpd">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            He leído y acepto el <a href="#" target="_blank">aviso legal</a> y la <a href="#" target="_blank">política de privacidad</a>.
+        </label>
+
+        <br>
+
+        <!--Aquí se coloca un checkbox para que el usuario acepte la cláusula RGPD (Reglamento General de Protección de Datos).-->
+        <!--Los enlaces dentro del texto permiten que el usuario vea el "aviso legal" y la "política de privacidad". 
+        Los enlaces apuntan a # para no redirigir a ninguna parte real, pero puedes cambiarlos por URLs válidas.-->
+
+        <button type="submit">Ahí va eso</button>
+         
+        <!--Finalmente, un botón de tipo submit envía el formulario cuando el usuario hace clic en él.
+          El texto dentro del botón es "Ahí va eso".-->
+        
+
+
+
+
+    </form>
+    
+</body>
+
+</html>
