@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         table {
+         border-collapse: colla
+         pse;
+         }
+         td {
+         border:1px solid #000;
+         padding:25px;
+         background-color:#ccc;
+         }
+        
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <!--<tr>Define una fila de la taba-->
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <!--<td> Define lo que ha dentro de una celda-->
+
+        </tr>
+
+        <tr>
+            <td rowspan="2">E, I</td>
+            <!-- rowspan="n" Esto significa que la celda ocupará "n" filas en lugar de solo 1.
+              La celda se extenderá hacia abajo y cubrirá el espacio de la siguiente fila.-->
+            <td>F</td>
+            <td colspan="2">G, H</td>
+            <!-- colspan="n" esto es lo mismo pero con las columnas-->
+        </tr>
+        
+        <tr>
+            <td>J</td>
+            <td rowspan="2">K, O</td> 
+            <td>L</td>
+        </tr>
+
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td>P</td>
+
+        </tr>
+    </table>
+
+
+    
+</body>
+</html>

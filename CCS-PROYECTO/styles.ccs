@@ -1,0 +1,83 @@
+
+body {
+    background-color: yellow;
+}
+
+  .cuadrado:nth-child(2) {
+    
+        width: 0;
+        height: 0;
+        border-top: 80px solid #000; 
+        border-right: 80px solid transparent;
+        position: fixed;
+        top:0px;  
+        left:0px;    
+    }
+  
+   
+    
+  
+  .cuadrado:nth-child(1) {
+    width: 100px;    /* Establece el ancho */
+    height: 100px;   /* Establece la altura */
+    background-color: red; /* Color de fondo */
+    position: fixed;
+    bottom: 0px;
+    left:  0px;
+    border-radius:0 100px 0 0 ;
+  }
+
+  .cuadrado:nth-child(3) {
+    width: 0;
+    height: 0;
+    border-top: 80px solid #000; 
+    border-left: 80px solid transparent;
+    position: fixed;
+    top:0px;  
+    right:0px;    
+}
+
+
+  
+  .cuadrado:nth-child(4) {
+    width: 100px;    /* Establece el ancho */
+    height: 100px;   /* Establece la altura */
+    background-color: red; /* Color de fondo */
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius:100px 0 0;
+  }
+
+
+  .Buscador {
+        width: 90%;
+        background-color: #fff;
+        float: left;
+        padding: 8px 0;
+        text-indent: 10px;
+        color: #555555;
+        border: 3px solid #fff; 
+        box-sizing: border-box;
+        height: 42px;
+  }
+
+.Bulbasaur {
+   background: linear-gradient(gray 50%, white 50%);
+   width: 100px;
+   height: 200px;
+}
+
+
+.Tipos {
+  display: flex;
+  
+}
+
+.Tipos p {
+
+  border: solid;
+  padding: 3px;
+  background-color: aliceblue;
+border-radius: 100px;
+}
